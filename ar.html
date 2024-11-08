@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodForGains</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">
+                        <img src="/pd_img/logotransparent.png" alt="Logo" class="logo">
+                    </a>
+                </li>
+                <li><a href="index.html#home">home</a></li>
+                <li><a href="index.html#about">about me</a></li>
+                <li><a href="index.html#portfolio">portfolio</a></li>
+                <li><a href="index.html#contact">contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="project-details-section">
+        <h2>AR namecard</h2>
+        <div class="project-image">
+            <!-- Thumbnail Image with a label to trigger checkbox -->
+            <label for="video-toggle">
+                <img src="pd_img/namecard2.png" alt="Project Thumbnail" class="thumbnail">
+            </label>
+
+            <!-- Checkbox to toggle video visibility -->
+            <input type="checkbox" id="video-toggle" class="video-toggle">
+
+            <!-- Fullscreen Video -->
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <video class="project-video" controls>
+                        <!-- <source src="pd_img/NameCardAR.MOV" type="video/mp4"> -->
+                        Your browser does not support the video tag.
+                    </video>
+                    <label for="video-toggle" class="close-video">X</label> <!-- Close button -->
+                </div>
+
+            </div>
+    </section>
+    
+    <script src="navbar.js"></script>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Pann's Portfolio. All rights reserved.</p>
+           
+        </div>
+    </footer>
+</body>
+
+</html>

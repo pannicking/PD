@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pann's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="snowflakes">
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">
+                        <img src="pd_img/logonav.png" alt="Logo" class="logo">
+                    </a>
+                </li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="intro">
+            <h1>Pann Lee.</h1>
+            <p>An aspiring UI/UX designer with a passion for minimalism and design.</p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-images">
+                    <img src="pd_img/aboutme/mt.jpg" alt="cca" onclick="openLightbox(this)">
+                    <img src="pd_img/aboutme/chinasot.jpg" alt="school trip" onclick="openLightbox(this)">
+                    <a href="https://youtu.be/9cKsXTezLBk?si=cgDdPhcTih-s-ZmK" target="_blank">
+                        <img src="pd_img/aboutme/ythumbnail.jpg" alt="thumbnail design" onclick="openLightbox(this)">
+                    </a>
+                    <img src="pd_img/aboutme/slime.jpg" alt="slime account" onclick="openLightbox(this)">
+                </div>
+                <div class="about-text">
+                    <p> Hi! My name is Pann, and I’m an aspiring UI/UX designer passionate about creating minimalistic
+                        and stylish designs. I am currently studying Digital Design and Development at Republic
+                        Polytechnic year 2, where I have developed my skills in HTML, CSS, JavaScript, and Node.js.</p>
+
+                    <p><strong>Design Interests:</strong><br> I enjoy working with neutral tones and clean aesthetics to
+                        craft user-friendly experiences.</p>
+
+                    <p><strong>Hobbies and Interests:</strong><br>
+                        - Active member of a Muay Thai interest group<br>
+                        - Love weightlifting, hitting the gym at least 3-4 times a week<br>
+                        - Passionate about traveling; recently visited Shenzhen, China, where I learned about Huawei,
+                        BYD, DJI innovations, and explored universities like Harbin and Baidu</p>
+
+                    <p><strong>Creative Activities:</strong><br>
+                        - Engaged in drawing<br>
+                        - Used to run a slime account which gained some attention<br>
+                        - Recently created a vlog from my trip to Japan and designed a thumbnail for it, blending my
+                        love for design with my travel experiences</p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox for enlarged images -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="close">&times;</span>
+            <img class="lightbox-image" id="lightbox-img" src="" alt="">
+        </div>
+
+        <!-- My Portfolio Section -->
+        <section id="portfolio">
+            <div class="portfolio-section">
+                <h2>My Portfolio</h2> <!-- Added Heading -->
+                <p>Here's some of my work, stay tuned for updates!</p>
+                <br>
+                <div class="buttons">
+                    <a href="development.html" class="btn development-btn">Development</a>
+                    <br>
+                    <a href="design.html" class="btn design-btn">Design</a>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- Contact Me Section -->
+        <section id="contact" class="contact">
+            <h2>Get In Touch.</h2>
+            <div class="contact">
+                <p class="contact-email">
+                    <a href="mailto:pannleeme@gmail.com" class="contact-link">pannleeme@gmail.com</a>
+                </p>
+                <h3>Social Media</h3>
+                <p class="contact-links">
+                    <a href="https://instagram.com/pannrenn" target="_blank" class="contact-link">Instagram</a> |
+                    <a href="https://t.me/pannrenn" target="_blank" class="contact-link">Telegram</a>
+                </p>
+
+                <img src="pd_img/logotransparent.png" alt="logo2" class="logo2">
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        // Hide lightbox initially when the DOM content is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none'; // Ensure lightbox is hidden on load
+        });
+
+        function openLightbox(imgElement) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+
+            lightbox.style.display = 'flex'; // Show the lightbox
+            lightboxImg.src = imgElement.src; // Set the lightbox image source
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none'; // Hide the lightbox
+        }
+    </script>
+    <script src="navbar.js"></script>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Pann's Portfolio. All rights reserved.</p>
+           
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodForGains</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
+</head>
+
+<body class="foodforgains-page">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">
+                        <img src="/pd_img/logonav.png" alt="Logo" class="logo">
+                    </a>
+                </li>
+                <li><a href="index.html#home">home</a></li>
+                <li><a href="index.html#about">about me</a></li>
+                <li><a href="index.html#portfolio">portfolio</a></li>
+                <li><a href="index.html#contact">contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-details-section-ffg">
+        <h2>FoodForGains</h2>
+
+
+
+        <div class="project-image-ffg">
+
+            <a href="https://foodforgains-1.onrender.com/" target="_blank"><img src="pd_img/foodforgains.png"
+                    alt="Project Image"></a>
+
+        </div>
+
+        <p>Food for Gains: Nutrition & Fitness Dining Experience</p>
+        <p>The Food for Gains website is a nutrition-focused platform designed to help users make informed food choices
+            that align with their fitness and health goals. It offers a menu with detailed information on protein and
+            calorie intake for each dish, allowing customers to easily track their nutritional intake. The website also
+            includes essential features such as a reservation system for booking tables, a feedback page for customers
+            to share their dining experiences, and an admin page for staff to manage and edit reservations. This website
+            aims to simplify the dining experience for health-conscious customers while also enabling restaurants to
+            streamline table reservations and manage customer feedback.</p>
+
+        <h3>Key Features and Functionalities:</h3>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Home Page</td>
+                    <td>A welcoming page introducing the website and its purpose, with clear navigation links to other
+                        pages (About, Menu, Reserve a Table, Feedback, Admin).</td>
+                </tr>
+                <tr>
+                    <td>About Page</td>
+                    <td>A page describing the website's mission, goals, and the importance of nutritional tracking for
+                        health and fitness. It provides information on how the platform supports users in achieving
+                        their fitness goals while dining out.</td>
+                </tr>
+                <tr>
+                    <td>Menu Page</td>
+                    <td>Lists food items available at partner restaurants, each with a description, protein and calorie
+                        intake information, and options to filter the menu by dietary preferences (e.g., vegetarian,
+                        low-carb).</td>
+                </tr>
+                <tr>
+                    <td>Reserve a Table Page</td>
+                    <td>Allows users to fill in a reservation form with their Name, Email, Contact No., Number of Pax,
+                        Date, and Time. Ensures real-time availability to prevent double-booking.</td>
+                </tr>
+                <tr>
+                    <td>Feedback Page</td>
+                    <td>Provides a feedback form for users to share their dining experience with fields for Name, Email,
+                        and Feedback.</td>
+                </tr>
+                <tr>
+                    <td>Admin Page</td>
+                    <td>Private page for staff/admins to view and manage reservations, with options to edit or delete
+                        reservations to keep the system accurate and up-to-date.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Database Fields:</h3>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Table</th>
+                    <th>Field Name</th>
+                    <th>Data Type</th>
+                    <th>Special</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Menu Table</td>
+                    <td>id</td>
+                    <td>INT(11)</td>
+                    <td>AUTO INCREMENT, PRIMARY KEY</td>
+                </tr>
+                <tr>
+                    <td>Menu Table</td>
+                    <td>dishName</td>
+                    <td>VARCHAR(100)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Menu Table</td>
+                    <td>description</td>
+                    <td>TEXT</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Menu Table</td>
+                    <td>protein</td>
+                    <td>INT(11)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Menu Table</td>
+                    <td>calories</td>
+                    <td>INT(11)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Menu Table</td>
+                    <td>category</td>
+                    <td>VARCHAR(50)</td>
+                    <td></td>
+                </tr>
+                <!-- Continue for Reservation Table, Feedback Table, User Table -->
+            </tbody>
+        </table>
+        <h3>Target Audience:</h3>
+        <p>The Food for Gains website targets health-conscious individuals, fitness enthusiasts, and those looking for a
+            balanced diet while enjoying meals outside. This includes gym-goers, health-conscious diners, professionals,
+            and partnering restaurants.</p>
+
+        <h3>Potential Challenges:</h3>
+        <ul>
+            <li><strong>Technical Challenges:</strong> Ensuring real-time synchronization between the reservation system
+                and restaurant availability, implementing smooth CRUD operations for managing menu items, reservations,
+                and feedback.</li>
+            <li><strong>Data Security Concerns:</strong> Protecting personal user data such as email, phone numbers, and
+                reservation details, and ensuring secure user authentication for reservation and feedback features.</li>
+            <li><strong>User Experience:</strong> Designing an intuitive user interface that makes navigation seamless,
+                especially for users unfamiliar with nutrition tracking, and ensuring the reservation form and feedback
+                page are easy to use on both desktop and mobile devices.</li>
+            <li><strong>Scalability:</strong> Planning for future scaling of the database to accommodate a growing
+                number of users, feedback, and reservations.</li>
+        </ul>
+
+        <h3>Timeline for Development:</h3>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Milestone</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Week 1-5</td>
+                    <td>Initial Planning and Design (Proposal Stage)</td>
+                    <td>Finalizing the website's concept, features, and user flow; designing wireframes and initial
+                        mockups; setting up the backend structure using Node.js and MySQL.</td>
+                </tr>
+                <tr>
+                    <td>Week 6-7</td>
+                    <td>UI/UX Design and Prototyping</td>
+                    <td>Creating high-fidelity designs using design tools (e.g., Figma) and building a prototype to get
+                        user feedback.</td>
+                </tr>
+                <tr>
+                    <td>Week 8-9</td>
+                    <td>Backend Development and Integration</td>
+                    <td>Implementing core functionalities, setting up the database, and integrating user authentication
+                        and reservation management.</td>
+                </tr>
+                <tr>
+                    <td>Week 10</td>
+                    <td>Testing and Refinement</td>
+                    <td>Testing functionalities, optimizing performance for mobile responsiveness and cross-browser
+                        compatibility, final bug fixes, and deployment.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Additional Features for Future Iterations:</h3>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>User Profiles</td>
+                    <td>Allow users to track their dietary preferences, reservation history, and feedback.</td>
+                </tr>
+                <tr>
+                    <td>Advanced Search and Filtering</td>
+                    <td>Filter the menu based on dietary restrictions (e.g., gluten-free, vegan) and track nutrition
+                        goals.</td>
+                </tr>
+                <tr>
+                    <td>Automated Email Reminders</td>
+                    <td>Send reminders for upcoming reservations and feedback requests to improve engagement.</td>
+                </tr>
+                <tr>
+                    <td>Loyalty Program</td>
+                    <td>Earn points for reservations, feedback, or dietary choices, redeemable for discounts.</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <a href="development.html" class="back-button">Back to Development Works</a>
+        <!-- Link back to main development page -->
+    </section>
+
+    <script src="js/navbar.js"></script>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Pann's Portfolio. All rights reserved.</p>
+           
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

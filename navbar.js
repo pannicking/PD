@@ -1,22 +1,26 @@
 // navbar.js
 
-let lastScrollTop = 0;
-const header = document.querySelector('header');
+document.addEventListener('DOMContentLoaded', () => {
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
 
-window.addEventListener('scroll', () => {
-    let scrollTop = window.scrollY || document.documentElement.scrollTop;
-    
-    if (scrollTop > lastScrollTop) {
-        // Scrolling down - hide navbar
-        header.classList.remove('show');
-    } else {
-        // Scrolling up - show navbar
-        header.classList.add('show');
-    }
-    
-    lastScrollTop = Math.max(0, scrollTop); // For mobile or negative scrolling
+    // Ensure the navbar is visible initially
+    header.classList.add('show');
+
+    window.addEventListener('scroll', () => {
+        let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Scrolling down - hide navbar
+            header.classList.remove('show');
+        } else if (scrollTop < lastScrollTop) {
+            // Scrolling up - show navbar
+            header.classList.add('show');
+        }
+
+        lastScrollTop = Math.max(0, scrollTop); // Prevent negative scroll values
+    });
 });
-
 
 // slideshow
 document.addEventListener("DOMContentLoaded", function () {

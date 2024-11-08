@@ -60,7 +60,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #43594a; /* Dark taupe for nav links */
+    color: #142c1b; /* Dark taupe for nav links */
     font-weight: bold;
     cursor: pointer;
     font-size: 1.2em; /* Increase font size for navigation links */
@@ -701,7 +701,7 @@ h2 {
 
 /* footer */
 .site-footer {
-    background-color: transparent !important; /* Transparent background */
+    background-color: transparent !; /* Transparent background */
     color: #333; /* You can adjust this text color as needed */
     padding: 20px;
     text-align: center;
